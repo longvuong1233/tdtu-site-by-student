@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đại Học TÔN ĐỨC THẮNG</title>
+<script src="../Học Javascript/jquery.js"></script>
+<script src="../jquery UI/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script src="mespopup.js"></script>
+<link rel="stylesheet" href="../Hoc HTML/normal.css" type="text/css">
+<link rel="stylesheet" href="tdtcss.css" type="text/css">
+<link rel="stylesheet" href="../jquery UI/jquery-ui-1.12.1.custom/jquery-ui.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<div id="thung">
+		
+		<div id="menu">
+			<ul>
+				<div class="login">
+					<li id="MSSV_Box">MSSV: &nbsp;<input type="text" id="MSSV" maxlength="20" autofocus/> </li>
+					<li><button id ="button" onClick="check()">login</button></li>
+				</div>
+				<li class="element_menu"><a href="#">Thông Tin Tuyển Sinh</a></li>
+				<li class="element_menu"><a href="#">Sơ Đồ Đào Tạo</a></li>
+				<li class="element_menu"><a href="#">Học Phí</a></li>
+				<li class="element_menu"><a href="#">Tư Vấn</a></li>
+				<li class="element_menu"><a href="#">Liên Hệ</a></li>
+			</ul>
+	</div>
+	<div id="content">
+		<div id="modau">
+			<div id="imglogo">
+				<img src="logo1.png">
+			</div>
+			<div id="brand">
+				<img src="brand.png" id="anh2">
+			</div>
+			<div id="name">
+				<h1>TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG</h1>
+				<h4 align="right">TON DUC THANG UNIVERSITY(TDTU)</h4>
+			</div>
+			<div id="sologan">
+				<h5><i>Từ Nơi Đây Ánh Sáng Sẽ Chiến Đến Khắp Nơi Trong Vũ Trụ</i></h5>
+			</div>
+		</div>
+		<div class="pure-menu pure-menu-horizontal" id="menungang">
+    		<ul class="pure-menu-list">
+				<li class="pure-menu-item pure-menu-selected" id="home"><a href="#" class="pure-menu-link">Home</a></li>
+				<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">Giới Thiệu</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink2" class="pure-menu-link">Phòng-Ban</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3 </a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink3" class="pure-menu-link">Khoa</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink4" class="pure-menu-link">Viện</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+				
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink5" class="pure-menu-link">Trung Tâm</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink6" class="pure-menu-link">Sinh Viên</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink7" class="pure-menu-link">MeDia</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink8" class="pure-menu-link">Nội Bộ</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>
+			<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink9" class="pure-menu-link">Thư Viện</a>
+					<ul class="pure-menu-children">
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">1</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">2</a></li>
+						<li class="pure-menu-item"><a href="#" class="pure-menu-link">3</a></li>
+					</ul>
+       		 </li>		
+   		 </ul>
+</div>
+		<div id="ct1">
+			<div id="video" class="hang1">
+				<video controls>
+					<source  src="./tdtu.mp4" type="video/mp4"/>
+				</video>
+			</div>
+			<div class="hang1" id="gioithieu">
+				<p>Trường Đại học Tôn Đức Thắng là một đại học đa ngành có thương hiệu tại Việt Nam. Thương hiệu của trường có được nhờ đầu tư mạnh về cơ sở vật chất và qua các buổi giao lưu và chia sẻ của những diễn giả và doanh nhân truyền thống không đa cấp. Trường trực thuộc Tổng Liên đoàn Lao động Việt Nam.</p>
+			</div>
+		</div>
+		<div id="than">
+			<div id="cstanphong" class="col">
+				<img class="anh" src="cstanphong.png"/>
+				<h3>Cơ Sở Tân Phong</h3>
+				<h4>Địa Chỉ:Tp HỒ CHÍ MINH</h4>
+			</div>
+			<div id="csbaoloc" class="col">
+				<img class="anh" src="csbaoloc.png">
+				<h3>Cơ Sở Bảo Lộc</h3>
+				<h4>Địa Chỉ:Tp Bảo Lộc</h4>
+			</div>
+			<div id="csnhatrang" class="col">
+				<img class	="anh" src="csnhatrang.jpg">
+				<h3>Cơ Sở Nha Trang</h3>
+				<h4>Địa Chỉ:Tp Nha Trang</h4>
+			</div>
+		</div>
+		<div id="ket">
+			<p>Copyright &copy; 2019 Đại Học Tôn Đức Thắng</p>
+		</div>
+	</div>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+.anh{
+	height: 150px;
+	width: 150px;
+	transition: all 1s;
+}
+.anh:hover{
+	transform:scale(3);
+}
+#thung{
+	position: relative;
+	padding-left: 200px;
+	left: 0;
+	width: 100%;
+	left: 0;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+#content{
+	margin-left: 50px;
+	transition: all 1s;
+}
+#menu {
+	height: 100%;
+	width: 200px;
+	left: 0;
+	position: fixed;
+	background-color:dodgerblue;
+}
+#menungang ul{
+	background-color:blue;
+	
+}
+#menungang ul  #home{
+	background: red;
+}
+#menungang ul li a{
+	color: whitesmoke;
+}
+#modau{
+	height: 200px;
+	position: relative;
+	
+}
+#imglogo{
+	position: absolute;
+}
+#brand{
+	position: absolute;
+		top:10px;
+		left: 800px;
+}
+#anh2{
+	height: auto;
+	width: 300px;
+}
+#name{
+	float: left;
+	position: absolute;
+	left: 270px;
+}
+
+#sologan{
+	float: right;
+	left: 700px;
+	top:100px;
+	position: absolute;
+}
+#ct1{
+	overflow: hidden;
+}
+.hang1{
+	float:left;
+	padding: 50px;
+	position: relative;
+}
+#gioithieu{
+	width: 32%;
+	border-bottom: 1px solid #0DE318;
+}
+#gioithieu p{
+	text-align: left;
+	text-indent: 15px;
+	word-spacing: 10px;
+	font-size: 120%	;
+	
+}
+li:not(#MSSV_Box ){
+	height: auto;
+	list-style-type: none;
+}
+#menu ul{
+	padding: 0 1em;
+	margin: 0;
+}
+#menu ul .element_menu {
+	line-height: 2.9em;
+	height: 50%;
+	border-bottom: 1px solid white;
+	transition: all, 1s;
+	-moz-transition: all, 1s;
+	-webkit-transition: all, 1s;
+}
+#menu ul .element_menu :hover{
+	color:darkred;
+	height: auto;
+	text-shadow: yellow 2px 3px 4px;
+}
+#MSSV_Box{
+	padding-top:15px;
+	list-style-type: none;
+}
+#button{
+	background: red;
+	cursor: pointer;
+	color: aliceblue;
+	display: inline;
+	
+}
+#MSSV{
+	width: 60%;
+	height: auto;
+}
+#menu ul li a{
+	color:yellow;
+	font-weight: bold;
+	transition: all, 1s;
+	-moz-transition: all, 1s;
+	-webkit-transition: all, 1s;
+}
+#menu ul li a:hover{
+	font-size: 110%;
+}
+#content:hover + #menu ul li a{
+	background-color: red;
+}
+#than{
+	overflow: hidden;
+}
+.col{
+	float: left;
+	width: 33.3%;
+	padding:70px;
+}
+#ket{
+	padding: 1em 3em;
+	font-size: 85%;
+	color:burlywood;
+	border-top: 1px solid #ECC4C4;
+}
